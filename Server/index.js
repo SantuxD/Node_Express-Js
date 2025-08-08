@@ -23,6 +23,7 @@ app.get("/users", (req, res) => {
   res.send(html);
 });
 
+//Dynamic routing 
 app.get("/api/users/:id", (req, res) => {
     const id = Number(req.params.id)
     const user = data.find((user) => user.id === id)
